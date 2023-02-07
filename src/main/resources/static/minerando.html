@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/styles.css">
+        <title>Minerador</title>
+    </head>
+    <script src="js/stomp.umd.min.js"></script>
+    <script src="js/dificuldade.js"></script>
+    <body>
+        <h2>Dificuldade: <span id="dificuldade"></span></h2>
+        <h1>Minerador</h1>
+        <a href="/parar-minerar">Parar mineração</a><br>
+        <a href="/logout">Sair</a>
+        <table id="mineracao">
+            <tr>
+                <th>Data e hora da mineração</th>
+                <th>Nonce</th>
+            </tr>
+        </table>
+    </body>
+    <script src="js/mineracao.js"></script>
+</html>

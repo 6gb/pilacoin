@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/styles.css">
+        <title>Minerador</title>
+    </head>
+    <script src="js/stomp.umd.min.js"></script>
+    <script src="js/dificuldade.js"></script>
+    <body>
+        <h2>Dificuldade: <span id="dificuldade"></span></h2>
+        <h1>Minerador</h1>
+        <form action="/minerar" method="GET">
+            <label for="qtdThreads">Quantidade de threads:</label>
+            <input id="qtdThreads" name="qtdThreads" type="number" min="2" required><br>
+            <button type="submit">Iniciar mineração</button>
+        </form>
+        <button onclick="listarPilas()">Listar pilas minerados</button><br>
+        <a href="/logout">Sair</a>
+        <div id="pilas"></div>
+    </body>
+    <script src="js/pilas.js"></script>
+</html>
